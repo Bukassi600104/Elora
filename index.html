@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Security</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ["Manrope", "sans-serif"],
+              body: ["Noto Sans", "sans-serif"],
+            },
+            colors: {
+              // Unified Palette
+              "primary": "#4f46e5", // Indigo 600
+              "primary-hover": "#4338ca", 
+              "primary-light": "#e0e7ff",
+              "secondary": "#8b5cf6", // Violet
+              "accent": "#0ea5e9", // Sky
+              
+              "surface": "#ffffff",
+              "surface-alt": "#f8fafc",
+              "surface-highlight": "#f1f5f9",
+              
+              "border-light": "#e2e8f0",
+              
+              "text-main": "#0f172a",
+              "text-secondary": "#64748b",
+              "text-muted": "#94a3b8",
+
+              "success": "#10b981",
+              "success-light": "#d1fae5",
+              "error": "#ef4444",
+              "warning": "#f59e0b",
+            },
+            boxShadow: {
+                'glow': '0 0 20px -5px rgba(79, 70, 229, 0.3)',
+                'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                'card': '0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02)',
+                'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04)'
+            },
+            backgroundImage: {
+                'gradient-primary': 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
+                'gradient-soft': 'linear-gradient(180deg, rgba(248,250,252,0) 0%, rgba(241,245,249,1) 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+      }
+      .font-display {
+        font-family: 'Manrope', sans-serif;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+        
+      /* Animations */
+      @keyframes fade-in-up {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-up {
+          animation: fade-in-up 0.5s ease-out forwards;
+      }
+      
+      .glass-panel {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Basic Security",
+  "description": "A comprehensive estate access management system. Features role-based dashboards for Super Admins, Estate Admins, Residents, and Security Guards to manage guest access, generate codes, and track activity logs.",
+  "requestFramePermissions": []
+}
